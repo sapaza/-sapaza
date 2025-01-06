@@ -11,12 +11,6 @@ chest1 = random.choice(t)
 chest2 = random.choice(t)
 chest3 = random.choice(t)
 
-while x<=5:
-     chest1 = chest1 + ", " + random.choice(t)
-     chest2 = chest2 + ", " + random.choice(t)
-     chest3 = chest3 + ", " + random.choice(t)
-     x+=1
-
-print("Сундук 1:", chest1)
-print("Сундук 2:", chest2)
-print("Сундук 3:", chest3)
+print(f"Сундук 1: '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}'")
+print(f"Сундук 1: '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}'")
+print(f"Сундук 1: '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}', '{random.choice(t)}'")
