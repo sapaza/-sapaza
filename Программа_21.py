@@ -36,7 +36,7 @@ def encounter_dragon(stats):
             stats['здоровье'] += randomrandint(5,15)
             print("Ты повысил свой уровень и восстановил здоровье!")
         else:
-            damage = randomrandint(10,30)
+            damage = random.randint(10,30)
             stats['здоровье'] -= damage
             print(f"Дракон ранил тебя на {damage} здоровья!")
     else:
@@ -80,7 +80,7 @@ def castle(stats):
                         else:
                             print("Он обезумел, пришлось защищаться.")
                             stats ['уровень'] += 1
-                            stats ['здоровье'] += randomrandint(10,20)
+                            stats ['здоровье'] += random.randint(10,20)
                     else:
                         first_choice(stats)
                 else:
@@ -95,10 +95,10 @@ def ovrag(stats):
     if choiceovrag == "осмотреться":
         if random.random() <= 0.3:
             print("Вы нашли полезные травы.")
-            stats['здоровье'] += randomrandint(10,30)
+            stats['здоровье'] += random.randint(10,30)
         else:
             print("Вы ничего не нашли.")
     else: 
         print ("Вы решили отдохнуть в овраге.")
-        stats['здоровье'] += randomrandint(5,15)
+        stats['здоровье'] += random.randint(5,15)
 start_game()
