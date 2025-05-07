@@ -13,7 +13,8 @@ def move_bd():
 def rotate_rt():
     setheading(0)
     fd(10)
-def move_stop():
+def move_stop(x,y):
+    goto(x,y)
     home()
 def red():
     color("red")
